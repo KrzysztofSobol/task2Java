@@ -116,4 +116,22 @@
         </plugins>
     </reporting>
 
+    <profiles>
+        <profile>
+            <id>production</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.13.0</version>
+                        <configuration>
+                            <debug>false</debug>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>
